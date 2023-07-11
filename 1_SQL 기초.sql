@@ -6,19 +6,7 @@
 CREATE DATABASE `UserDB`;
 
 #실습1-2
-CREATE TABLE `User1`(
-	`uid`	VARCHAR(10),
-	`name`VARCHAR(10),
-	`hp`	CHAR(13),
-	`age`	INT
-);userdb
-
-#실습1-3
-INSERT INTO `User1` VALUES('A101', '김유신', '010-1234-1111', 25);
-INSERT INTO `User1` VALUES('A102', '김춘추', '010-1234-2222', 23);
-INSERT INTO `User1` VALUES('A103', '장보고', '010-1234-3333', 32);
-INSERT INTO `User1` (`uid`, `name`, `age`) VALUES('A104', '강감찬', 45);
-INSERT INTO `User1` SET `uid`='A105', `name`='이순신', `hp`='010-1234-5555';
+userdbuserdbuser1
 
 #실습1-4
 SELECT * FROM `User1`;

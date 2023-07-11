@@ -18,12 +18,12 @@ CREATE TABLE `Department`(
 	`tel`		CHAR(12) NOT NULL
 ); 
 
-userdbCREATE TABLE `Sales`(
+CREATE TABLE `Sales`(
 	`seq`		INT AUTO_INCREMENT PRIMARY KEY,
 	`uid`		VARCHAR(10) NOT NULL,
 	`year`	YEAR NOT NULL,
 	`month`	TINYINT NOT NULL,
-	`sale`	INT NOT NULL
+	`price`	INT NOT NULL
 ); 
 
 #실습 4-2
@@ -81,7 +81,7 @@ INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a102', 2020, 2, 1
 INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a103', 2020, 2, 93000);
 INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a104', 2020, 2, 84000);
 INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a105', 2020, 2, 180000);
-INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a108', 2020, 2, 76000);erd2bookstore
+INSERT INTO `Sales` (`uid`, `year`, `month`, `price`) VALUES ('a108', 2020, 2, 76000);
 
 #실습 4-3
 SELECT * FROM `Member` WHERE `name`='김유신';
