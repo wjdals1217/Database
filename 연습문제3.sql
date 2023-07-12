@@ -174,7 +174,7 @@ SELECT
 	COUNT(*) AS `사회복지 마케팅 수강 신청건수`,
 	AVG(`regTotalScore`) AS `사회복지 마케팅 평균`
 FROM `Register` AS a JOIN `Lecture` AS b ON a.reglecNo=b.lecNo
-WHERE `lecName`='사회복지 마케팅';
+WHERE `lecNo`=349;
 
 #실습3-25
 SELECT 
@@ -237,3 +237,4 @@ JOIN `Register` AS b ON a.stdNo=b.regStdNo
 JOIN `Lecture` AS c ON b.reglecNo=c.lecNo
 GROUP BY `stdNo`;
 
+erd3

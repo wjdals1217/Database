@@ -49,7 +49,14 @@ INSERT INTO `Book` (`bookName`, `publisher`,`price`) VALUES ('야구를 부탁�
 INSERT INTO `Book` (`bookName`, `publisher`,`price`) VALUES ('올림픽 이야기', '삼성당', 7500);
 INSERT INTO `Book` (`bookName`, `publisher`,`price`) VALUES ('Olympic Champions', 'Pearson', 13000);
 
-INSERT INTO `Order` (`custId`, `bookId`, `salePrice`, `orderDate`) VALUES(1, 1, 6000, '2014-07-01');
+INSERT INTO `Publisher`VALUES ('굿스포츠', '051-153-1234');
+INSERT INTO `Publisher`VALUES ('나무수', '051-153-1235');
+INSERT INTO `Publisher`VALUES ('대한미디어', '051-153-1236');
+INSERT INTO `Publisher`VALUES ('이상미디어', '051-153-1237');
+INSERT INTO `Publisher`VALUES ('삼성당', '051-153-1238');
+INSERT INTO `Publisher`VALUES ('Pearson', '051-153-1239');
+
+erd2INSERT INTO `Order` (`custId`, `bookId`, `salePrice`, `orderDate`) VALUES(1, 1, 6000, '2014-07-01');erd2erd2
 INSERT INTO `Order` (`custId`, `bookId`, `salePrice`, `orderDate`) VALUES(1, 3, 21000, '2014-07-03');
 INSERT INTO `Order` (`custId`, `bookId`, `salePrice`, `orderDate`) VALUES(2, 5, 8000, '2014-07-03');
 INSERT INTO `Order` (`custId`, `bookId`, `salePrice`, `orderDate`) VALUES(3, 6, 6000, '2014-07-04');
@@ -275,4 +282,4 @@ INSERT INTO `Book` SET
 UPDATE `Customer` SET `address`='대한민국 부산' WHERE `custId`=5;
 
 #실습 4-46
-DELETE FROM `Customer` WHERE `custId` = 5;
+DELETE FROM `Customer` WHERE `custId` = 5;ermodeluniversity
