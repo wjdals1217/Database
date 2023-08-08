@@ -58,3 +58,5 @@ SELECT `title`, `content`, `writer`, `regip`,`rdate` FROM `Article`;
 
 # 전체 게시물 개수
 SELECT COUNT(*) FROM `Article`;
+
+DELETE FROM `Article`
