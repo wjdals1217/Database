@@ -60,3 +60,6 @@ SELECT `title`, `content`, `writer`, `regip`,`rdate` FROM `Article`;
 SELECT COUNT(*) FROM `Article`;
 
 DELETE FROM `Article`
+
+게시물 보기
+
