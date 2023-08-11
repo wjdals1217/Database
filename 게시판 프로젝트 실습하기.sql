@@ -61,5 +61,6 @@ SELECT COUNT(*) FROM `Article`;
 
 DELETE FROM `Article`
 
-게시물 보기
+# 게시물 수정
+UPDATE `Article` SET `title`=?, `content`=?, `file`=? WHERE `no`=?"
 
