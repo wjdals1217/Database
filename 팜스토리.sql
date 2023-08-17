@@ -86,4 +86,17 @@ CREATE TABLE `Order` (
 	FOREIGN KEY(`orderProduct`) REFERENCES `Product`(`pNo`),
 	FOREIGN KEY(`orderUser`) REFERENCES `User`(`uid`)
 );
-farmstory
+# 게시물 채우기 
+INSERT INTO `Article` (`cate`, `title`, `content`, `writer`, `regip`,`rdate`) 
+SELECT `cate`, `title`, `content`, `writer`, `regip`,`rdate` FROM `Article`;
+
+# 글 개수
+SELECT COUNT(*) FROM `Article` WHERE `parent`=0 AND `cate`='story';
+
+
+
+
+
+
+
+
