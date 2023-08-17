@@ -48,7 +48,7 @@ CREATE TABLE `File`(
 CREATE TABLE `Terms`(
 	`terms`		TEXT NOT NULL,
 	`privacy`	TEXT NOT NULL
-);
+);Jboard
 
 SELECT A.*, B.`nick` FROM `Article` AS A JOIN `User` AS B ON A.writer = B.uid ORDER BY A.`no` DESC LIMIT 0, 10;
 
