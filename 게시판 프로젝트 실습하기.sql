@@ -53,7 +53,7 @@ CREATE TABLE `Terms`(
 SELECT A.*, B.`nick` FROM `Article` AS A JOIN `User` AS B ON A.writer = B.uid ORDER BY A.`no` DESC LIMIT 0, 10;
 
 # 게시물 채우기
-INSERT INTO `Aricle` (`title`, `content`, `writer`, `regip`,`rdate`) 
+INSERT INTO `Atricle` (`title`, `content`, `writer`, `regip`,`rdate`) 
 SELECT `title`, `content`, `writer`, `regip`,`rdate` FROM `Article`;
 
 # 전체 게시물 개수
