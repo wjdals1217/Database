@@ -93,8 +93,14 @@ SELECT `cate`, `title`, `content`, `writer`, `regip`,`rdate` FROM `Article`;
 # 글 개수
 SELECT COUNT(*) FROM `Article` WHERE `parent`=0 AND `cate`='story';
 
+# 댓글 찾기
+SELECT * FROM `Article` WHERE `parent` != 0;
 
+# 수정된 글 찾기
+SELECT * FROM `Article` WHERE `title` ='안녕하세요';
 
+# 최신글
+SELECT `no`, `title`, rdate FROM `Article` WHERE `cate`='grow' Order BY `no` DESC LIMIT 5;
 
 
 
