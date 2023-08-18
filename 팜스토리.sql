@@ -100,7 +100,7 @@ SELECT * FROM `Article` WHERE `parent` != 0;
 SELECT * FROM `Article` WHERE `title` ='안녕하세요';
 
 # 최신글
-SELECT `no`, `title`, rdate FROM `Article` WHERE `cate`='grow' Order BY `no` DESC LIMIT 5;
+SELECT `no`, `title`, SUBSTR(`rdate`, 3, 8) AS `rdate` FROM `Article` WHERE `cate`='grow' Order BY `no` DESC LIMIT 5;
 
 
 
