@@ -90,6 +90,9 @@ CREATE TABLE `Order` (
 INSERT INTO `Article` (`cate`, `title`, `content`, `writer`, `regip`,`rdate`) 
 SELECT `cate`, `title`, `content`, `writer`, `regip`,`rdate` FROM `Article`;
 
+INSERT INTO `Product` (`type`, `pName`, `price`, `delivery`,`stock`, `thumb1`, `thumb2`, `thumb3`, `seller`, `rdate`) 
+SELECT `type`, `pName`, `price`, `delivery`,`stock`, `thumb1`, `thumb2`, `thumb3`, `seller`, `rdate` FROM `Product`;
+
 # 글 개수
 SELECT COUNT(*) FROM `Article` WHERE `parent`=0 AND `cate`='story';
 
