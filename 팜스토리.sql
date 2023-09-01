@@ -105,7 +105,14 @@ SELECT * FROM `Article` WHERE `title` ='안녕하세요';
 # 최신글
 SELECT `no`, `title`, SUBSTR(`rdate`, 3, 8) AS `rdate` FROM `Article` WHERE `cate`='grow' Order BY `no` DESC LIMIT 5;
 
+ALTER TABLE `Order` ADD COLUMN `orderEtc` VARCHAR(255) AFTER `orderTotal`;
 
+ALTER TABLE `Order` ADD COLUMN `receiver` VARCHAR(255) AFTER `orderTotal`;
 
+ALTER TABLE `Order` ADD COLUMN `hp` VARCHAR(255) AFTER `receiver`;
 
+ALTER TABLE `Order` ADD COLUMN `zip` VARCHAR(255) AFTER `hp`;
 
+ALTER TABLE `Order` ADD COLUMN `addr1` VARCHAR(255) AFTER `zip`;
+
+ALTER TABLE `Order` ADD COLUMN `addr2` VARCHAR(255) AFTER `addr1`;
